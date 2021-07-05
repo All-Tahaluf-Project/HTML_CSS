@@ -1,0 +1,726 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Logo {
+    margin: 5px;
+}
+
+    .Logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+.title a {
+    font-size: 2pc;
+    margin-left: 2pc;
+}
+
+.navbar-light .navbar-brand {
+    color: #000000;
+    transition: 0.5s;
+}
+
+.navbar-light .navbar-brand {
+    color: #ffffff;
+}
+
+
+.navbar-nav .nav-item {
+    font-size: 1.4pc;
+}
+
+    .navbar-nav .nav-item a {
+        color: #000000;
+        font-size: 1.4pc;
+        margin: 1pc;
+        transition: 0.5s;
+    }
+
+    .navbar-nav .nav-item :hover {
+        color: #ffffff;
+        margin-left: 1.5pc;
+        margin-right: 1.5pc;
+    }
+
+.BrandContent {
+    padding: 1px;
+}
+
+    .BrandContent .title {
+        margin: 15px;
+    }
+
+.bg-light {
+    background-color: #ff000099 !important;
+    opacity: 0.8;
+    box-shadow: 0 0 80px 0 rgb(199 67 67);
+    filter: grayscale(0.3);
+}
+
+
+    .bg-light:hover {
+        opacity: 1;
+        filter: grayscale(0);
+    }
+
+
+
+.DropdownMenuTop {
+    height: 60vh;
+    width: 100%;
+    background-color: #ff000099 !important;
+    opacity: 0.90;
+    box-shadow: 0 0 80px 0 rgb(140 67 67);
+    background-size: cover;
+}
+
+.listmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+    .listmenu .row {
+        padding: 1pc;
+        text-align: center;
+        width: 100%;
+        font-size: 2pc;
+        margin: 0px;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+        .listmenu .row:hover {
+            border-bottom: 2px solid #ffd300;
+            font-size: 3pc;
+            font-weight: bold;
+        }
+
+.DropdownMenu {
+    height: 25pc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+    .DropdownMenu ul {
+        list-style-type: none;
+    }
+
+    .DropdownMenu .Item {
+        padding: 1px;
+    }
+
+    .DropdownMenu .row .col-8 .row .divimg .ImgEntrees {
+        height: 280px;
+        width: 100%;
+        border-radius: 1pc;
+        transition: 2s;
+    }
+
+        .DropdownMenu .row .col-8 .row .divimg .ImgEntrees:hover {
+            border-radius: 0.3pc;
+            animation-name: AnimationEntrees;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+    .DropdownMenu .row .col-8 .row .divimg .ImgLunch {
+        height: 280px;
+        width: 100%;
+        border-radius: 1pc;
+        transition: 2s;
+    }
+
+        .DropdownMenu .row .col-8 .row .divimg .ImgLunch:hover {
+            border-radius: 0.3pc;
+            animation-name: AnimationLunch;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+    .DropdownMenu .row .col-8 .row .divimg .ImgSweet {
+        height: 280px;
+        width: 100%;
+        border-radius: 1pc;
+        transition:2s;
+    }
+
+        .DropdownMenu .row .col-8 .row .divimg .ImgSweet:hover {
+            border-radius: 0.3pc;
+            animation-name: AnimationSweet;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+        }
+
+@keyframes AnimationEntrees {
+    0% {
+        content: url("../../../Img/NavMeals/Entrees/coffee_cake_utensils_106303_1440x2560.jpg");
+    }
+
+    50% {
+        content: url("../../../Img/NavMeals/Entrees/pizza_vegetables_olives_peppers_cheese_111102_720x1280.jpg");
+    }
+
+    100% {
+        content: url("../../../Img/NavMeals/Entrees/viennese_wafers_waffles_kiwi_fruit_juice_breakfast_100114_720x1280.jpg");
+    }
+}
+
+@keyframes AnimationLunch {
+    0% {
+        content: url("../../../Img/NavMeals/Lunch/burger_bun_meat_cucumbers_onions_111638_1440x2560.jpg");
+    }
+
+    50% {
+        content: url("../../../Img/NavMeals/Lunch/french_fries_chicken_food_meat_107805_1440x2560.jpg");
+    }
+
+    100% {
+        content: url("../../../Img/NavMeals/Lunch/hamburger_burger_meat_vegetables_116725_1440x2560.jpg");
+    }
+}
+
+@keyframes AnimationSweet {
+    0% {
+        content: url("../../../Img/NavMeals/Sweet/cake_dessert_coffee_beans_197922_1440x2560.jpg");
+    }
+
+    50% {
+        content: url("../../../Img/NavMeals/Sweet/pancakes_berries_honey_199587_1440x2560.jpg");
+    }
+
+    100% {
+        content: url("../../../Img/NavMeals/Sweet/tartlet_blueberries_dessert_109727_480x854.jpg");
+    }
+}
+
+
+.DropdownMenu .divimg {
+    text-align: center;
+}
+
+.DropdownMenu .divtext {
+    color: #ffffff;
+    text-align: center;
+    font-size: 2pc;
+}
+
+
+.carousel {
+    width: 100%;
+}
+    .carousel .carousel-inner img {
+        height: 85vh;
+        width: 100%;
+    }
+    .carousel h3 {
+        color: #cc0000;
+    }
+    .carousel p{
+        color:white;
+    }
+
+
+
+
+
+.Menu {
+    height: 6pc;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+    .Menu .Sweet {
+        text-align: center;
+        padding: 0px;
+    }
+
+        .Menu .Sweet input {
+            font-size: 2pc;
+            height: 6pc;
+            color: #986e36;
+            background-color: #986e36;
+            transition: 1s;
+            color: #fff;
+        }
+            .Menu .Sweet input:hover {
+                font-weight: bold;
+                font-size: 3pc;
+                background: none;
+                border: none;
+                border: 0.4pc solid;
+                color: #986e36;
+            }
+
+    .Menu .Entrees {
+        text-align: center;
+        padding: 0px;
+    }
+
+        .Menu .Entrees input {
+            font-size: 2pc;
+            height: 6pc;
+            color: #986e36;
+            background-color: #d7af30;
+            transition: 1s;
+            color: #fff;
+        }
+
+            .Menu .Entrees input:hover {
+                font-weight: bold;
+                font-size: 3pc;
+                background: none;
+                border: none;
+                border: 0.4pc solid;
+                color: #d7af30;
+            }
+
+    .Menu .Lunch {
+        text-align: center;
+        padding: 0px;
+    }
+
+        .Menu .Lunch input {
+            font-size: 2pc;
+            height: 6pc;
+            color: #986e36;
+            background-color: #304002;
+            transition: 1s;
+            color: #fff;
+        }
+
+            .Menu .Lunch input:hover {
+                font-weight: bold;
+                font-size: 3pc;
+                background: none;
+                border: none;
+                border: 0.4pc solid;
+                color: #304002;
+            }
+
+    .section1 {
+        height: 15pc;
+        background-image: url("../../../Img/Background/chocolate_candy_sweets_106254_1280x720.jpg");
+        background-size: cover;
+    }
+
+    .section1 .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 6pc;
+        color: #986e36;
+    }
+
+.section1Menu {
+    margin: 1pc;
+}
+
+    .section1Menu .row {
+        padding: 1pc;
+    }
+    .section1Menu .card {
+        height: 15pc;
+        box-shadow: 0 0 10px 0 rgb(0 0 0);
+        color: #000;
+        border-radius: 2pc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        filter: grayscale(0.5);
+        transition: 1s;
+    }
+
+        .section1Menu .card:hover {
+            color: #fff;
+            border-radius: 0.2pc;
+            filter: grayscale(0);
+        }
+
+        .section1Menu .card .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .section1Menu .card p {
+            font-size: 20px;
+            text-align: center;
+        }
+
+
+
+.section2 {
+    height: 15pc;
+    background-image: url("../../../Img/Background/steak_mushrooms_asparagus_meat_pan_103375_1600x900.jpg");
+    background-size: cover;
+}
+
+    .section2 .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 6pc;
+        color: #b0ff00;
+    }
+
+.section2Menu {
+    margin: 1pc;
+}
+
+    .section2Menu .row {
+        padding: 1pc;
+    }
+
+    .section2Menu .card {
+        height: 15pc;
+        box-shadow: 0 0 10px 0 rgb(0 0 0);
+        color: #000;
+        border-radius: 2pc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        filter: grayscale(0.5);
+        transition:1s;
+    }
+
+        .section2Menu .card:hover {
+            color: #fff;
+            border-radius: 0.2pc;
+            filter: grayscale(0);
+        }
+
+        .section2Menu .card .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .section2Menu .card p {
+            font-size: 20px;
+            text-align: center;
+        }
+
+
+
+
+.section3 {
+    height: 15pc;
+    background-image: url("../../../Img/Background/hamburger_burger_meat_vegetables_116725_1600x900.jpg");
+    background-size: cover;
+}
+
+    .section3 .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 6pc;
+        color: #ff7a00;
+    }
+
+.section3Menu {
+    margin: 1pc;
+}
+
+    .section3Menu .row {
+        padding: 1pc;
+    }
+
+    .section3Menu .card {
+        height: 15pc;
+        box-shadow: 0 0 10px 0 rgb(0 0 0);
+        color: #000;
+        border-radius: 2pc;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        filter: grayscale(0.5);
+        transition: 1s;
+    }
+
+        .section3Menu .card:hover {
+            border-radius: 0.2pc;
+            filter: grayscale(0);
+            color: #fff;
+        }
+
+        .section3Menu .card .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .section3Menu .card p {
+            font-size: 20px;
+            text-align: center;
+        }
+
+
+
+#EntreesFood{
+    display:none;
+}
+/*footer*/
+    footer {
+    bottom: 0;
+    background: rgb(72 20 20 / 32%);
+    width: 100%;
+    text-align: center;
+    font-size: 1pc;
+    font-weight: bold;
+    color: #ff003e;
+    font-weight: bold;
+    font-size: 1pc;
+}
+
+        footer .row{
+            margin:0px;
+        }
+        .ContactUs-logo img {
+            width: 30px;
+            height: 30px;
+            animation-name: AnimationBorder;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+
+@keyframes AnimationBorder {
+    0% {
+        border-radius: 0pc;
+    }
+
+    25% {
+        border-radius: 1.5pc;
+    }
+
+    50% {
+        border-radius: 3pc;
+    }
+
+    75% {
+        border-radius: 1.5pc;
+    }
+
+    100% {
+        border-radius: 0pc;
+    }
+}
+
+
+
+
+
+.btn-success {
+    color: #fff;
+    background-color: #560b0b;
+}
+    .btn-success:hover {
+        background-color: #ff0000;
+    }
+
+
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        font-family: 'Cormorant', serif;
+        background: #262626
+    }
+
+.container-fluid {
+    margin-top: 200px !important
+}
+
+p {
+    font-size: 20px;
+    line-height: 33px !important;
+    color: #fff
+}
+
+.small {
+    letter-spacing: 0.5px !important
+}
+
+.card {
+    box-shadow: 0px 5px 16px rgba(223, 241, 223, 0.5);
+    transition: 0.8s;
+    background: #333;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 7px !important;
+    transition: 2s;
+    height: 34pc;
+}
+
+.card-header,
+.card-footer {
+    border-radius: 7px !important
+}
+
+.card:after {
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    z-index: 9999;
+    height: 100%;
+    pointer-events: none
+}
+
+.card-title img {
+    z-index: 99999 !important
+}
+
+.card .layer {
+    position: absolute;
+    top: calc(100% - 5px);
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#03a9f4, #e91ee3);
+    left: 0;
+    z-index: 1;
+    transition: 0.5s
+}
+
+.card:hover {
+    box-shadow: -5px 50px 100px rgba(223, 241, 223, 0.5)
+}
+
+    .card:hover hr {
+        background-color: #fff
+    }
+
+    .card:hover h4 {
+        font-weight: 600
+    }
+
+    .card:hover p {
+        font-weight: 600
+    }
+
+    .card:hover small {
+        font-weight: 600
+    }
+
+    .card:hover .layer {
+        top: 0
+    }
+
+.card .content {
+    position: relative;
+    z-index: 2
+}
+
+    .card .content .img-1 {
+        width: 100px;
+        height: 100px;
+        margin: 0 auto;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 5px solid white !important
+    }
+
+.card h4 {
+    color: #fff;
+    font-weight: 500
+}
+
+hr {
+    background-color: rgb(117, 117, 117);
+    width: 80% !important;
+    transition: 1s
+}
+
+.bold {
+    font-weight: 500
+}
+
+#quotes {
+    opacity: 0.1;
+    filter: alpha(opacity=40)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

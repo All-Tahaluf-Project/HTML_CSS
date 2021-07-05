@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+        *{
+            margin:0%;
+            padding:0%;
+        }
+        .Title {
+            margin-top: 5pc;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+
+            border: 1pc solid #ad2ba54d;
+            border-radius: 7px;
+            margin: 5pc;
+            padding: 2pc;
+            background: #ff00c842;
+        }
+        legend {
+            border: 3px solid #000000;
+            font-size: larger;
+            padding: 10px;
+        }
+        legend img {
+            border-radius:5pc;
+
+        }
+            legend:hover {
+                transform: translateY(-20px);
+            }
+        .ContainerIN {
+            border-radius: 3pc;
+            padding: 3pc;
+            background: #dd7ec8;
+            box-shadow: 0 0 9px 0px #00000096;
+        }
+        .ContainerOut {
+            margin: 5%;
+            padding: 5%;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            box-shadow: 0 0 20px 0 rgb(0 0 0 / 10%);
+            background: #ff00c84a;
+            box-shadow: 0 0 9px 0px #00000096;
+        }
+        .b_Title{
+            text-align:center;
+            margin:30px;
+        }
+        .fieldset {
+            border: 3px solid rgb(0 0 0);
+            width: 400px;
+            margin: auto;
+            text-align: center;
+        }
+        .fieldset_Content {
+            margin:30px;
+        }
+        .Content_Left {
+            text-align: left;
+            padding: 1.5pc;
+            width: 50%;
+        }
+        .Content_Right {
+            text-align: right;
+            padding: 1.5pc;
+            width: 50%;
+        }
+        .SelectBox {
+            width: 70%;
+        }
+        .textArea {
+            width: 100%;
+            height: 100px;
+        }
+
+        .div-btn {
+            text-align: center;
+            display: flex;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+        }
+        .btnSubmit {
+            display: inline-block;
+            background-color: #ff00d463;
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: 0.5s;
+            border: none;
+            box-shadow: 0 0 9px 0px #00000096;
+        }
+
+            .btnSubmit:hover {
+                background: #ff00d4;
+            }
+
+        .btnClear {
+            display: inline-block;
+            background-color: #d189fd54;
+            color: #fff;
+            padding: 8px 30px;
+            margin: 30px 0;
+            border-radius: 30px;
+            transition: 0.5s;
+            border: none;
+            box-shadow: 0 0 9px 0px #00000096;
+        }
+        .btnClear:hover {
+            background: #ff00d4;
+        }
+
+
+        .body {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            color: white;
+            justify-content: center;
+            margin-left: 10%;
+            filter: grayscale(100%);
+        }
+
+        .body:hover {
+            filter: grayscale(0%);
+        }
+
+        .img {
+            min-height: 100%;
+            min-width: 1024px;
+            width: 100%;
+            height: 130pc;
+        }
+
+        .InputBox {
+            width: 70%;
+            height: 30px;
+            padding-left: 10px;
+            font-size: 15px;
+            margin-right: 10px;
+            border: 1px solid #065770;
+            margin-top: 30px;
+            border-radius: 7px;
+        }
+
+            .InputBox:hover {
+                background: #d5cdf1;
+            }
+
+        .CheckAndRadioBox {
+            width: 50%;
+            height: 20px;
+            padding-left: 10px;
+            font-size: 15px;
+            margin-right: 10px;
+            border: 1px solid #065770;
+            margin-top: 30px;
+            border-radius: 7px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <div class="body">
+        <h1 class="Title">My First Form</h1>
+        <div class="ContainerOut">
+            <div class="ContainerIN">
+                <div class="b_Title">
+                    <b>
+                        Tell Us Something Positive That Happened To You Today
+                    </b>
+                </div>
+                <form action="/" method="post">
+                    <fieldset class="fieldset">
+                        <legend>
+                            <img src="Img/user.png" height="30px" width="30px" /><br />
+                            Personal Information
+                        </legend>
+                        <div class="fieldset_Content">
+                            <label>Name : </label>
+                            <input required type="text" class="InputBox" placeholder="Name" />
+                        </div>
+                        <div class="fieldset_Content">
+                            <label>Email : </label>
+                            <input required type="email" class="InputBox" placeholder="Email" />
+                        </div>
+                    </fieldset>
+
+                    <table>
+                        <tr>
+                            <td class="Content_Right">
+                                <label>On Scale Of 1-10,How Good Was It ? </label>
+                            </td>
+                            <td class="Content_Left">
+                                <input required type="number" class="InputBox" max="10" min="1" placeholder="Enter Number Between 1 => 10" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="Content_Right">
+                                <label>Where Did It Happen? </label>
+                            </td>
+                            <td class="Content_Left">
+                                <select required class="SelectBox InputBox">
+                                    <option selected>At Home</option>
+                                    <option>At Market</option>
+                                    <option>At Garden</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="Content_Right">
+                                <label>At What Time It Did Happen? </label>
+                            </td>
+                            <td class="Content_Left">
+                                <input required class="CheckAndRadioBox" type="radio" name="Radio" /> Morning <br />
+                                <input required class="CheckAndRadioBox" type="radio" name="Radio" /> Afternoon <br />
+                                <input required class="CheckAndRadioBox" type="radio" name="Radio" /> Evening <br />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="Content_Right">
+                                <label>What Emotions Did You Experience?</label>
+                                <label>(Select All That Apply)</label>
+                            </td>
+                            <td class="Content_Left">
+                                <input class="CheckAndRadioBox" type="checkbox" /> Excited <br />
+                                <input class="CheckAndRadioBox" type="checkbox" /> Humbled <br />
+                                <input class="CheckAndRadioBox" type="checkbox" /> Elated <br />
+                                <input class="CheckAndRadioBox" type="checkbox" /> Loved <br />
+                                <input class="CheckAndRadioBox" type="checkbox" /> Enthusiastic <br />
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="Content_Right">
+                                <label>Please Describe Your Positive Experience.</label>
+                            </td>
+                            <td class="Content_Left">
+                                <textarea class="textArea" rows="10" cols="10"></textarea>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="div-btn">
+                        <input type="submit" class="btnSubmit" value="Submit" />
+                        <input type="reset" class="btnClear" value="Clear" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <img src="Img/pexels-rakicevic-nenad-769525.jpg" class="img">
+
+</body>
+</html>

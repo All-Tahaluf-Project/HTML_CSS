@@ -1,0 +1,34 @@
+﻿/**{
+    margin:0px;
+    padding:0px;
+}*/
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.Container h2{
+    text-align :center;
+    margin-top:5pc;
+}
+
+.Container p {
+    color: white;
+    background-image: url(../Img/glare_bokeh_glitter_137650_1920x1080.jpg);
+    text-align: left;
+    height: 30pc;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+
+    line-height:20px;
+    word-spacing:10px;
+}
+
+
+Ul{
+    background-color:red;
+}
+
+

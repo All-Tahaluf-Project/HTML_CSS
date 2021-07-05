@@ -1,0 +1,38 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+}
+
+.navbar{
+    background-color:gray;
+    position:fixed;
+    z-index:1;
+    width:100%
+}
+
+.navbar h2{
+    font-size:22px;
+    color:#fff;
+    width:20%;
+}
+
+.navbar ul{
+    list-style:none;
+    width:80%;
+    height:50px;
+    float:left;
+}
+
+.clear{
+    clear:both;
+}
+.navbar ul li{
+    display:inline-block;
+}
+.navbar ul li a{
+    text-decoration:none;
+    color:#fff;
+    padding:10px;
+    display:block;
+}
+

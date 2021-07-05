@@ -1,0 +1,75 @@
+﻿*{
+margin:0px;
+padding:0px;
+}
+
+
+/*Header*/
+/*.container {
+padding: 1pc;
+background-color:red;*/
+/*background: #ffb52d5c;
+background-image:url("../Img/1600188.jpg");*/
+/*width: 100%;
+position: fixed;
+}*/
+
+.container .nav {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+}
+
+.container .DivLogo {
+display: flex;
+flex-direction: row;
+align-content: center;
+justify-content: center;
+align-items: center;
+}
+
+.container .DivLogo .Img {
+height: 40px;
+width: 50px;
+border-radius: 1pc;
+}
+
+.container .DivLogo .label {
+font-size: 2pc;
+margin-left: 1pc;
+}
+
+.container .Label {
+font-family: Handover Sans;
+font-size:2pc;
+}
+
+.container .DivLinks {
+display: flex;
+margin-right: 2pc;
+}
+
+.container .DivLinks .Links {
+margin-right: 1pc;
+}
+
+.container .DivLinks .Links :hover {
+font-size:2.2pc;
+}
+
+
+
+
+/*Section*/
+.section1{
+
+}
+
+.section1 .DivVideo{
+
+}
+
+.section1 .DivText{
+
+}

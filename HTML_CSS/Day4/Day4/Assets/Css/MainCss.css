@@ -1,0 +1,168 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+}
+
+header {
+    height: 70px;
+    background: #ffc10073;
+}
+
+    header h1 {
+        width: 180px;
+        margin-left: 83px;
+        margin-top: -4%;
+    }
+
+#Logo {
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+}
+
+ul {
+    margin-left: 300px;
+    margin-top: -2%;
+}
+li {
+    display: inline;
+    margin: 1%;
+    font-size: 25px;
+}
+
+
+    li a {
+        text-decoration: none;
+        color: black;
+        transition: 0.3s;
+    }
+
+    li :hover {
+        font-size:2pc;
+    }
+
+
+
+/*Main*/
+
+#img1 {
+    margin-top: 3%;
+    height: 300px;
+    width: 300px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    margin: 3pc;
+}
+
+    main .div1 {
+    }
+    main .div2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    main p {
+        float: right;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        padding: 100px;
+    }
+
+.divOutRelative {
+    height: 500px;
+    width: 100%;
+    background: red;
+    position:relative;
+}
+
+.divInRelative {
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+    position:absolute;
+}
+
+.divInAbsolute {
+    height: 500px;
+    width: 100%;
+    background: red;
+}
+
+.divInAbsolute {
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+}
+
+
+.Container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Container div{
+    width:100px;
+}
+
+
+
+.Animation {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    position:relative;
+/*animation-name: AnimationColor;*/
+animation-name: AnimationPostion;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes AnimationColor{
+/*    from{
+        background-color:red;
+    }
+    To {
+        background-color: yellow;
+    }*/
+}
+
+@keyframes AnimationPostion {
+    0% {
+        background-color:red;
+        left:0px;
+        top:0px;
+    }
+
+    25% {
+        background-color: green;
+        left: 0px;
+        top: 200px;
+    }
+
+    50% {
+        background-color: yellow;
+        left: 200px;
+        top: 200px;
+    }
+
+    75% {
+        background-color: black;
+        left: 200px;
+        top: 0px;
+    }
+
+    100% {
+        background-color: red;
+        left: 0px;
+        top: 0px;
+    }
+}
